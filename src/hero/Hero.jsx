@@ -49,6 +49,9 @@ const Hero = () => {
           variants={textVariants}
           initial="initial"
           animate="animate">
+          <p>
+            <span>Myself,</span>
+          </p>
           <motion.h2 variants={textVariants}>NIKHIL RAMESH ARJUN</motion.h2>
           <motion.h1 variants={textVariants}>
             Web developer and UI designer

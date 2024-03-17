@@ -6,10 +6,10 @@ const Navbar = () => {
     <div className="navbar">
       <Sidebar />
       <div className="wrapper">
-        <span>Nikhil Arjun</span>
+        <span>Welcome to my portfolio</span>
         <div className="social">
           <a href="#">
-            <img src="/facebook.png" alt="" />
+            <img src="/linkedin_dark.png" alt="" />
           </a>
 
           <a href="#">
@@ -17,11 +17,11 @@ const Navbar = () => {
           </a>
 
           <a href="#">
-            <img src="/youtube.png" alt="" />
+            <img src="/github_dark.png" alt="" />
           </a>
 
           <a href="#">
-            <img src="/dribbble.png" alt="" />
+            <img src="/email_dark.png" alt="" />
           </a>
         </div>
       </div>

@@ -1,42 +1,66 @@
 import "./portfolio.scss";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const items = [
   {
     id: 1,
     title: "BrainWave AI Webiste",
-    img: "https://images.pexels.com/photos/20623990/pexels-photo-20623990/free-photo-of-blue-tit-dreamy.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
+    src: "/assets/BrainWave.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere provident nulla recusandae, vitae vel labore reprehenderit,",
   },
   {
     id: 2,
     title: "Nike Website",
-    img: "https://images.pexels.com/photos/20623990/pexels-photo-20623990/free-photo-of-blue-tit-dreamy.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
+    src: "/assets/Nike.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere provident nulla recusandae, vitae vel labore reprehenderit,",
   },
   {
     id: 3,
     title: "Hulu landing page",
-    img: "https://images.pexels.com/photos/20623990/pexels-photo-20623990/free-photo-of-blue-tit-dreamy.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
+    src: "/assets/Hulu.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere provident nulla recusandae, vitae vel labore reprehenderit,",
   },
   {
     id: 4,
     title: "Food-ordering page",
-    img: "https://images.pexels.com/photos/20623990/pexels-photo-20623990/free-photo-of-blue-tit-dreamy.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
+    src: "/assets/Food.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere provident nulla recusandae, vitae vel labore reprehenderit,",
   },
   {
     id: 5,
     title: "SaaS landing Page",
-    img: "https://images.pexels.com/photos/20623990/pexels-photo-20623990/free-photo-of-blue-tit-dreamy.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
+    src: "/assets/SaaS.png",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere provident nulla recusandae, vitae vel labore reprehenderit,",
   },
 ];
 
 const Single = ({ item }) => {
-  return <section>{item.title}</section>;
+  const ref = useRef();
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    // offset: ["start start", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [-250, 250]);
+
+  return (
+    <section>
+      <div className="container">
+        <div className="wrapper">
+          <div className="imageContainer" ref={ref}>
+            <img src={item.src} alt={item.title} />
+          </div>
+          <motion.div className="textContainer" style={{ y: y }}>
+            <h2>{item.title}</h2>
+            <p>{item.desc}</p>
+            <button>See Demo</button>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 const Portfolio = () => {
