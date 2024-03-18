@@ -64,7 +64,9 @@ const Services = () => {
             Services with more than 1 Years of experience. Providing quality
             work to clients and companies
           </p>
-          <button>Let's Talk</button>
+          <button>
+            <a href="#Contact">Let's Talk</a>
+          </button>
         </motion.div>
 
         <motion.div
@@ -75,7 +77,9 @@ const Services = () => {
             Services with more than 1 Years of experience. Providing quality
             work to clients and companies
           </p>
-          <button>Let's Talk</button>
+          <button>
+            <a href="#Contact">Let's Talk</a>
+          </button>
         </motion.div>
 
         <motion.div
@@ -86,7 +90,9 @@ const Services = () => {
             Services with more than 1 Years of experience. Providing quality
             work to clients and companies
           </p>
-          <button>Let's Talk</button>
+          <button>
+            <a href="#Contact">Let's Talk</a>
+          </button>
         </motion.div>
 
         <motion.div
@@ -97,7 +103,9 @@ const Services = () => {
             Services with more than 1 Years of experience. Providing quality
             work to clients and companies
           </p>
-          <button>Let's Talk</button>
+          <button>
+            <a href="#Contact">Let's Talk</a>
+          </button>
         </motion.div>
       </motion.div>
     </div>

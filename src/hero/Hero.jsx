@@ -85,9 +85,8 @@ const Hero = () => {
                 fontSize: "16px",
                 fontWeight: "bold",
               }}
-              variants={textVariants}
-              onClick={scrollToPortfolio}>
-              <a href="#Portfolio">See the lastest work</a>
+              variants={textVariants}>
+              See the lastest work
             </motion.button>
             <motion.button
               style={{
@@ -98,9 +97,8 @@ const Hero = () => {
               }}
               variant={textVariants}
               className="button-2"
-              variants={textVariants}
-              onClick={scrollToContact}>
-              <a href="#Contact">Contact Me</a>
+              variants={textVariants}>
+              Contact me
             </motion.button>
           </motion.div>
           <motion.img
