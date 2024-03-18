@@ -25,7 +25,7 @@ const Services = () => {
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
-    <motion.div
+    <div
       className="services"
       variants={variants}
       initial="initial"
@@ -100,7 +100,7 @@ const Services = () => {
           <button>Let's Talk</button>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

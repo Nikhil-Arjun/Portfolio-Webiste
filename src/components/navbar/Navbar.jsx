@@ -8,15 +8,15 @@ const Navbar = () => {
       <div className="wrapper">
         <span>Welcome to my portfolio</span>
         <div className="social">
-          <a href="#">
+          <a href="https://www.linkedin.com/in/nikhil-arjun/">
             <img src="/linkedin_dark.png" alt="" />
           </a>
 
-          <a href="#">
+          <a href="https://www.instagram.com/">
             <img src="/instagram.png" alt="" />
           </a>
 
-          <a href="#">
+          <a href="https://github.com/Nikhil-Arjun">
             <img src="/github_dark.png" alt="" />
           </a>
 
