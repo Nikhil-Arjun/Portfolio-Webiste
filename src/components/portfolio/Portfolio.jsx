@@ -5,33 +5,33 @@ import { useRef } from "react";
 const items = [
   {
     id: 1,
-    title: "BrainWave AI Webiste",
-    src: "https://drive.google.com/file/d/1HShtnwc2i2M67KFqaIzD4ECiC8BkZgcI/view?usp=sharing",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere provident nulla recusandae, vitae vel labore reprehenderit,",
+    title: "BrainWave AI Application",
+    img: "https://i.postimg.cc/9X6RBsKs/Brain-Wave.png",
+    desc: "Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.",
   },
   {
     id: 2,
-    title: "Nike Website",
-    src: "https://drive.google.com/file/d/16TpOSD42cxe879s9dwqXSMSOp3Qq-u75/view?usp=sharing",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere provident nulla recusandae, vitae vel labore reprehenderit,",
+    title: "Nike landing page",
+    img: "https://i.postimg.cc/wMpz1544/Nike.png",
+    desc: "Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.",
   },
   {
     id: 3,
     title: "Hulu landing page",
-    src: "https://drive.google.com/file/d/1GEe9S0ccIsajZSBp-qHznxYnfz6BRUhZ/view?usp=sharing",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere provident nulla recusandae, vitae vel labore reprehenderit,",
+    img: "https://i.postimg.cc/gk4p0ZV4/Hulu.png",
+    desc: "Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.",
   },
   {
     id: 4,
-    title: "Food-ordering page",
-    src: "https://drive.google.com/file/d/1Cwt_R7AtZYMWRcWW8xi_rC9eEIfMrKWE/view?usp=sharing",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere provident nulla recusandae, vitae vel labore reprehenderit,",
+    title: "Food-ordering application",
+    img: "https://i.postimg.cc/cHqyzMW1/Food.png",
+    desc: "Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.",
   },
   {
     id: 5,
-    title: "SaaS landing Page",
-    src: "https://drive.google.com/file/d/1p7TfxFBmX0Xif9PTiSugKADnTJ4Axf54/view?usp=sharing",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facere provident nulla recusandae, vitae vel labore reprehenderit,",
+    title: "SaaS landing page platform ",
+    img: "https://i.postimg.cc/rsM6VVzv/SaaS.png",
+    desc: "Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.",
   },
 ];
 
@@ -50,9 +50,9 @@ const Single = ({ item }) => {
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
-            <img src={item.src} alt=" " />
+            <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{ y: y }}>
+          <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <button>See Demo</button>
