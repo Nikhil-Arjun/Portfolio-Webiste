@@ -20,7 +20,7 @@ const Navbar = () => {
             <img src="/github_dark.png" alt="" />
           </a>
 
-          <a href="#">
+          <a href="#Contact">
             <img src="/email_dark.png" alt="" />
           </a>
         </div>

@@ -41,6 +41,25 @@ const sliderVariants = {
 };
 
 const Hero = () => {
+  const scrollToPortfolio = () => {
+    const portfolioSection = document.getElementById("portfolio");
+    if (portfolioSection) {
+      window.scrollTo({
+        top: portfolioSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      window.scrollTo({
+        top: contactSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="hero">
       <div className="wrapper">
@@ -53,7 +72,7 @@ const Hero = () => {
             <span>Myself,</span>
           </p>
           <motion.h2 variants={textVariants}>NIKHIL RAMESH ARJUN</motion.h2>
-          <motion.h1 variants={textVariants}>
+          <motion.h1 variants={textVariants} whileHover={{ color: "#ffb914" }}>
             Web developer and UI designer
           </motion.h1>
           <motion.p variants={textVariants}>
@@ -61,11 +80,27 @@ const Hero = () => {
             <br /> and I'm very passionate and dedicated to my work.
           </motion.p>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
+            <motion.button
+              style={{
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+              variants={textVariants}
+              onClick={scrollToPortfolio}>
+              <a href="#Portfolio">See the lastest work</a>
             </motion.button>
-            <motion.button className="button-2" variants={textVariants}>
-              Contact Me
+            <motion.button
+              style={{
+                background: "white",
+                color: "black",
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+              variant={textVariants}
+              className="button-2"
+              variants={textVariants}
+              onClick={scrollToContact}>
+              <a href="#Contact">Contact Me</a>
             </motion.button>
           </motion.div>
           <motion.img
