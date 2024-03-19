@@ -42,7 +42,7 @@ const sliderVariants = {
 
 const Hero = () => {
   const scrollToPortfolio = () => {
-    const portfolioSection = document.getElementById("portfolio");
+    const portfolioSection = document.getElementById("Portfolio");
     if (portfolioSection) {
       window.scrollTo({
         top: portfolioSection.offsetTop,
@@ -52,7 +52,7 @@ const Hero = () => {
   };
 
   const scrollToContact = () => {
-    const contactSection = document.getElementById("contact");
+    const contactSection = document.getElementById("Contact");
     if (contactSection) {
       window.scrollTo({
         top: contactSection.offsetTop,
@@ -68,12 +68,10 @@ const Hero = () => {
           variants={textVariants}
           initial="initial"
           animate="animate">
-          <p>
-            <span>Myself,</span>
-          </p>
           <motion.h2 variants={textVariants}>NIKHIL RAMESH ARJUN</motion.h2>
           <motion.h1 variants={textVariants} whileHover={{ color: "#ffb914" }}>
-            Web developer and UI designer
+            Web developer and <br />
+            UI designer
           </motion.h1>
           <motion.p variants={textVariants}>
             I'm creative designer and developer based in India,
@@ -84,8 +82,10 @@ const Hero = () => {
               style={{
                 fontSize: "16px",
                 fontWeight: "bold",
+                zIndex: 1,
               }}
-              variants={textVariants}>
+              variants={textVariants}
+              onClick={scrollToPortfolio}>
               See the lastest work
             </motion.button>
             <motion.button
@@ -97,7 +97,8 @@ const Hero = () => {
               }}
               variant={textVariants}
               className="button-2"
-              variants={textVariants}>
+              variants={textVariants}
+              onClick={scrollToContact}>
               Contact me
             </motion.button>
           </motion.div>
@@ -108,14 +109,16 @@ const Hero = () => {
             alt=""
           />
         </motion.div>
+
+        <motion.div
+          className="slidingTextContainer"
+          variants={sliderVariants}
+          initial="initial"
+          animate="animate">
+          Developer Sketcher Designer Content Creator
+        </motion.div>
       </div>
-      <motion.div
-        className="slidingTextContainer"
-        variants={sliderVariants}
-        initial="initial"
-        animate="animate">
-        Developer Sketcher Designer Content Creator
-      </motion.div>
+
       <div className="imageContainer">
         {/* <img src="/hero.png" alt="hero char" /> */}
       </div>
