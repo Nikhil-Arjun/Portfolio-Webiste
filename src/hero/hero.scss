@@ -69,15 +69,15 @@
   }
 
   .imageContainer {
-    height: 100%;
+    height: 50%;
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 300px;
+    right: 300px;
 
     @include mobile {
-      height: 50%;
-      width: 100%;
-      top: unset;
+      height: 25%;
+      width: 40%;
+      right: 75px;
       bottom: 0;
     }
 

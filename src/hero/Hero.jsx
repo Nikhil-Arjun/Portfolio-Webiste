@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./hero.scss";
+import ProfilePic from "../assets/profile2.png";
 
 const textVariants = {
   initial: {
@@ -120,7 +121,7 @@ const Hero = () => {
       </div>
 
       <div className="imageContainer">
-        {/* <img src="/hero.png" alt="hero char" /> */}
+        <img src={ProfilePic} alt="" />
       </div>
     </div>
   );
