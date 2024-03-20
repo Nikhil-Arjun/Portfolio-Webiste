@@ -8,7 +8,7 @@ const items = [
     title: "BrainWave AI Application",
     img: "https://i.postimg.cc/9X6RBsKs/Brain-Wave.png",
     desc: "Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.",
-    link: "https://65f0584d15ed2f0ca6e7500d--coruscating-truffle-6e9070.netlify.app/",
+    link: "https://stunning-piroshki-8e602a.netlify.app/",
   },
   {
     id: 2,

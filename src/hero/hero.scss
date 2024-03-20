@@ -58,6 +58,10 @@
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300px;
+
+          @include mobile {
+            padding: 20px;
+          }
         }
       }
 
@@ -79,6 +83,7 @@
       width: 40%;
       right: 75px;
       bottom: 0;
+      display: none;
     }
 
     img {
