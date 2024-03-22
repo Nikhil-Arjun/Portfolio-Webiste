@@ -12,7 +12,7 @@ const Navbar = () => {
             <img src="/linkedin_dark.png" alt="" />
           </a>
 
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/nikhil_arj/">
             <img src="/instagram.png" alt="" />
           </a>
 
