@@ -8,7 +8,7 @@ const items = [
     title: "iPhone Apple website",
     img: "https://i.postimg.cc/8c4G5zkf/i-Phone-Apple-website.png",
     desc: "Coming soon...",
-    link: "#",
+    link: "https://apple-jet-eight.vercel.app/",
   },
   {
     id: 2,
