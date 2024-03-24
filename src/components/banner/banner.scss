@@ -1,0 +1,17 @@
+.banner {
+  height: 40px;
+  background: #5221e6;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  .banner-text {
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.125rem;
+  }
+}
