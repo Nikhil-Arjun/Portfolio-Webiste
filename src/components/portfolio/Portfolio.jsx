@@ -59,7 +59,7 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   const handleButtonClick = () => {
-    window.location.href = item.link;
+    window.open(item.link, "_blank");
   };
 
   return (
