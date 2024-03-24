@@ -7,7 +7,7 @@ const items = [
     id: 1,
     title: "iPhone Apple website",
     img: "https://i.postimg.cc/8c4G5zkf/i-Phone-Apple-website.png",
-    desc: "Coming soon...",
+    desc: "Welcome ! Step into a world where innovation meets seamless user experience. Crafted with cutting-edge technologies like ReactJS, GSAP, and Three.js, our platform redefines what's possible in the realm of smartphone emulation. From stunning visual effects to fluid interactions, immerse yourself in a virtual journey that mirrors the elegance and functionality of the iconic iPhone. Explore our meticulously designed interface, experience the responsiveness of every swipe, and witness the power of next-generation web development in action. Join us as we redefine the boundaries of digital emulation, one pixel at a time.",
     link: "https://apple-jet-eight.vercel.app/",
   },
   {

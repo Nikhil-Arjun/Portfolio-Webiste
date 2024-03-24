@@ -7,6 +7,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 import Banner from "./components/banner/Banner";
+import About from "./components/about/About";
 
 const App = () => {
   return (
@@ -16,6 +17,9 @@ const App = () => {
       <section id="Homepage">
         <Navbar />
         <Hero />
+      </section>
+      <section>
+        <About />
       </section>
       <section id="Services">
         <Parallax type="services" />
@@ -27,6 +31,9 @@ const App = () => {
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
+      <section>
+        <About />
+      </section>
       <section id="Contact">
         <Contact />
         <Banner />
