@@ -5,27 +5,34 @@ import { useRef } from "react";
 const items = [
   {
     id: 1,
+    title: "GharDekho.com",
+    img: "https://i.postimg.cc/1t1FNSbk/Ghar-Dekho.png",
+    desc: "Coming soon....",
+    link: "",
+  },
+  {
+    id: 2,
     title: "iPhone Apple website",
     img: "https://i.postimg.cc/8c4G5zkf/i-Phone-Apple-website.png",
     desc: "Welcome ! Step into a world where innovation meets seamless user experience. Crafted with cutting-edge technologies like ReactJS, GSAP, and Three.js, our platform redefines what's possible in the realm of smartphone emulation. From stunning visual effects to fluid interactions, immerse yourself in a virtual journey that mirrors the elegance and functionality of the iconic iPhone. Explore our meticulously designed interface, experience the responsiveness of every swipe, and witness the power of next-generation web development in action. Join us as we redefine the boundaries of digital emulation, one pixel at a time.",
     link: "https://apple-iphone-eight.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "BrainWave AI Application",
     img: "https://i.postimg.cc/9X6RBsKs/Brain-Wave.png",
     desc: "Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.",
     link: "https://stunning-piroshki-8e602a.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Nike landing page",
     img: "https://i.postimg.cc/wMpz1544/Nike.png",
     desc: "The Nike landing page built with React offers a dynamic and immersive experience for users. Featuring sleek design elements and smooth transitions, the page showcases Nike's latest products, including footwear, apparel, and accessories. Users can easily navigate through various categories, explore product details, and add items to their shopping cart seamlessly.",
     link: "https://65eb2ac333e07ca99d4c06c5--incandescent-khapse-64c8b4.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Hulu landing page",
     img: "https://i.postimg.cc/gk4p0ZV4/Hulu.png",
     desc: "The Hulu landing page, crafted with React, presents a vibrant and user-friendly interface tailored for seamless entertainment exploration. Upon arrival, users are greeted with personalized recommendations based on their viewing history and preferences. Featuring a visually appealing layout, the page highlights trending shows, popular movies, and exclusive Hulu originals, enticing users to dive into a world of diverse content.",
@@ -33,14 +40,14 @@ const items = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Food-ordering application",
     img: "https://i.postimg.cc/cHqyzMW1/Food.png",
     desc: "The food ordering website, developed using React, offers a convenient and seamless platform for users to browse, order, and enjoy their favorite dishes from a variety of restaurants. Upon landing on the homepage, users are greeted with a visually appealing interface featuring mouth-watering images of various cuisines and enticing promotions.",
     link: "https://nikhil-arjun.github.io/food-ordering-website/",
   },
   {
-    id: 6,
+    id: 7,
     title: "SaaS landing page platform ",
     img: "https://i.postimg.cc/rsM6VVzv/SaaS.png",
     desc: "The SaaS landing page, built using React, is designed to captivate potential users and effectively communicate the value proposition of the software-as-a-service product. The page features a clean and modern layout, with crisp visuals and concise messaging to grab visitors' attention.",
