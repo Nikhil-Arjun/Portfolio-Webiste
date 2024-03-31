@@ -32,13 +32,17 @@
         // color: rebeccapurple;
         color: #ffb914;
         letter-spacing: 7px;
+
+        @include mobile {
+          font-size: 20px;
+        }
       }
 
       h1 {
         font-size: 60px;
 
         @include mobile {
-          font-size: 36px;
+          font-size: 25px;
         }
       }
 
